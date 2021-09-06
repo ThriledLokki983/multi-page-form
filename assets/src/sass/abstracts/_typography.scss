@@ -1,0 +1,17 @@
+h1,
+h2,
+h3,
+h4 {
+    font-size: $font-hg;
+    color: $color-primary;
+    font-family: "kepler";
+}
+
+.pages {
+    .page-title {
+        padding: $equal-padding;
+        font-size: $font-bg;
+        font-family: "kepler";
+        color: $color-secondary;
+    }
+}

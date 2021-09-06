@@ -1,0 +1,21 @@
+@font-face {
+    font-family: kepler;
+    src: url("../../kepler-std/KeplerStd-LightScnCapt.otf") format("opentype");
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "kepler";
+}

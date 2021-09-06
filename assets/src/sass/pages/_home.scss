@@ -1,0 +1,33 @@
+.content {
+    width: 100%;
+    min-height: 55vh;
+}
+
+.search__page,
+.input__page {
+    @include section-layout;
+    padding: $section-padding;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.animated {
+    animation: moveInBottom 0.5s ease-out 0.01s;
+    animation-fill-mode: backwards;
+}
+
+.animated-right {
+    animation: moveInRight 0.5s ease-out 0.01s;
+    animation-fill-mode: backwards;
+}
+
+.animated-left {
+    animation: moveInLeft 0.5s ease-out 0.01s;
+    animation-fill-mode: backwards;
+}

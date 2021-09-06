@@ -1,0 +1,20 @@
+.pages {
+    .btn__box {
+        width: 80%;
+        margin: 10rem 0 0 20%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            font: $font-style;
+            color: $color-white;
+            background: $color-primary !important;
+            border: none !important;
+            padding: 1.5rem 4rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
