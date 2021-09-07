@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="./assets/src/js/data.js"></script>
         <link rel="stylesheet" href="./assets/dist/css/order.styles.css" />
         <title>order-app</title>
     </head>
@@ -108,8 +109,8 @@
                             <label for="land" class="label">Land</label>
                         </div>
                         <div class="form__field--input">
-                            <select type="text" class="input search-input" id="land" aria-label="form-select">
-                                <option value="1" selected>kies uw land</option>
+                            <select type="text" class="countrypicker input search-input select" id="land" aria-label="form-select">
+                                <!-- <option value="1" selected>kies uw land</option> -->
                             </select>
                         </div>
                     </div>
@@ -131,7 +132,6 @@
                             <input type="text" class="input search-input" id="tel" placeholder="voer hier uw telefoonnumer in" required/>
                         </div>
                     </div>
-
 
                     <div class="form__field">
                         <div class="form__field--label">
@@ -156,7 +156,70 @@
 				</div>
             </section>
 
-       </div>
+
+            <section class="page page-3 select-watch__page">
+                <h1 class="page-title">Collectie</h1>
+                <form action="#" class="form collectie__form">
+                    <div class="form__field">
+                            <div class="form__field--label">
+                                <label for="land" class="label">Horloge</label>
+                            </div>
+                            <div class="form__field--input">
+                                <select type="text" class="watchpicker input search-input select" id="land" aria-label="form-select">
+                                    <option value="1" selected>kies uw horloge</option>
+                                </select>
+                            </div>
+                    </div>
+
+                    <div class="form__field">
+                        <div class="form__field--label">
+                            <label for="land" class="label">Band</label>
+                        </div>
+                        <div class="form__field--input">
+                            <select type="text" class="bandpicker input search-input select" id="land" aria-label="form-select">
+                                <option value="1" selected>kies uw band</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+				<div class="specifications">
+					<h1 class="page-title-mini">Specificaties</h1>
+					<hr />
+					<div class="watch__details">
+						<div class="detail--columns">
+							<span>Type</span>
+							<span>Prijs</span>
+							<span>Details</span>
+						</div>
+					<hr />
+						<div class="watch">
+							<div class="watch__title"> </div>
+						</div>
+						<div class="band">
+							<div class="band__title"> </div>
+						</div>
+					</div>
+				</div>
+
+                <div class="btn__box">
+					<div class="btn__box--next">
+						<button class="btn__next terug"> 
+							TERUG
+						</button>
+					</div>
+					<div class="btn__box--back">
+						<button class="btn__back verder">VERDER</button>
+					</div>
+				</div>
+            </section>
+
+       
+       
+       
+        </div>
+
+            
     </main>
 
     <footer class="footer">
@@ -165,5 +228,5 @@
         </div>
     </footer>
     </body>
-    <script type="module" src="./assets/dist/js/order.script.js"></script>
+    <script type="module" defer src="./assets/src/js/main.js"></script>
 </html>

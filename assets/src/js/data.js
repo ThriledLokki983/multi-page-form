@@ -1,7 +1,4 @@
 /** @format */
-
-export const countries = [];
-
 export const watches = [
     {
         id: 1,
@@ -49,6 +46,35 @@ export const watches = [
     },
 ];
 
+export const customers = [
+    {
+        voornaam: "Gideon",
+        tussenvoegsel: "",
+        achternaam: "Nimoh",
+        adres: "",
+        postcode: "",
+        plaats: "",
+        land: "",
+        email: "",
+        tel: "",
+        opmerk: "",
+    },
+    {
+        voornaam: "",
+        tussenvoegsel: "",
+        achternaam: "",
+        adres: "",
+        postcode: "",
+        plaats: "",
+        land: "",
+        email: "",
+        tel: "",
+        opmerk: "",
+    },
+];
+
+export const countries = [];
+
 const getJSON = function (url, errMsg = "Something went wrong") {
     return fetch(url).then((response) => {
         if (!response.ok) throw new Error(`${errMsg}, (${response.status})`);
@@ -57,13 +83,11 @@ const getJSON = function (url, errMsg = "Something went wrong") {
 };
 
 /**
+ * IIFE - cos I will be calling once
  * Accepts no parameter - all it does is get all available data based on the inner function called
  */
-const getAllCountries = function () {
+(() => {
     getJSON(`https://restcountries.eu/rest/v2/all`).then((result) =>
         result.map((country) => countries.push(country))
     );
-};
-getAllCountries();
-
-// console.log(countries);
+})();

@@ -1,7 +1,5 @@
-/** @format */
-
-// import { WatchesDetail } from "../js/module.js";
-// import { watches, countries } from "./data.js";
+import { watches, countries } from "./data.js";
+import { WatchesDetail } from "./modules.js";
 
 const pages = Array.from(document.querySelectorAll(".page")), // so as to get all Array prototypes to use
     verder = document.querySelectorAll(".verder"),
@@ -48,23 +46,23 @@ const changePage = (btn) => {
  */
 
 const watch = new WatchesDetail(watches);
-// console.log(watch.data);
+console.log(watch.data);
 
-// watchSelect.addEventListener("change", (e) => {
-//     const val = e.target.value;
-//     let watch = new WatchesDetail(watches.find((el) => el.name === val));
-//     // console.log(watch);
-//     watch.loadWatchDetails(val);
-// });
+watchSelect.addEventListener("change", (e) => {
+    const val = e.target.value;
+    let watch = new WatchesDetail(watches.find((el) => el.name === val));
+    watch.loadWatchDetails(val);
+});
 
-// const loadOptions = (arr, ParentEl) => {
-//     arr.map((data) => {
-//         return ParentEl.appendChild(
-//             document.createElement("OPTION")
-//         ).appendChild(document.createTextNode(data.name));
-//     });
-// };
+const loadOptions = (arr, ParentEl) => {
+    console.log(arr);
+    arr.map((data) => {
+        return ParentEl.appendChild(
+            document.createElement("OPTION")
+        ).appendChild(document.createTextNode(data.name));
+    });
+};
 
-// loadOptions(countries, countrySelect);
-// loadOptions(watches, watchSelect);
+loadOptions(countries, countrySelect);
+loadOptions(watches, watchSelect);
 // loadOptions(band, bandSelect);

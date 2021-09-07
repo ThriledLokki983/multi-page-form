@@ -39,7 +39,7 @@ export class WatchesDetail {
               </span>
         </div>
     </div>`;
-        return ParentEl.insertAdjacentHTML("beforebegin", data), this;
+        return ParentEl.insertAdjacentHTML("beforebegin", data);
     }
 }
 

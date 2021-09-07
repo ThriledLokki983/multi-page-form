@@ -4,9 +4,14 @@
 }
 
 .search__page,
-.input__page {
+.input__page,
+.select-watch__page {
     @include section-layout;
     padding: $section-padding;
+}
+
+.collectie__form {
+    margin-bottom: $mb-md;
 }
 
 .page {
@@ -30,4 +35,13 @@
 .animated-left {
     animation: moveInLeft 0.5s ease-out 0.01s;
     animation-fill-mode: backwards;
+}
+
+.detail--columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    gap: 1rem;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }

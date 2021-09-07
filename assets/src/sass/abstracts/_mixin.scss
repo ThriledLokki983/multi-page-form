@@ -37,7 +37,6 @@
     text-align: right;
 
     button {
-        // background: $color-primary !important;
         border: none !important;
         padding: 1.5rem 4rem;
         font-size: 1.5rem;
@@ -51,42 +50,4 @@
 @mixin btn-box-style {
     display: flex;
     justify-content: space-between;
-    // padding: 0 0 0 20%;
-}
-
-@mixin form-field-style {
-    display: flex !important;
-    justify-content: space-between;
-    width: 100%;
-    .label {
-        width: 80%;
-        font-size: 1.8rem;
-        margin-bottom: 4rem;
-    }
-
-    .input {
-        padding: 1rem 5rem;
-        font-size: 1.8rem;
-        border-radius: none !important;
-    }
-
-    .row-input {
-        min-width: 20%;
-        text-align: left;
-
-        .select {
-            padding: 2rem 5rem;
-            font-size: 1.2rem;
-            border-radius: none !important;
-        }
-    }
-
-    .textarea {
-        display: flex;
-        justify-content: space-between;
-
-        .label {
-            width: 16%;
-        }
-    }
 }
